@@ -1,4 +1,4 @@
-### LunarHub
+# LunarHub
 This is just some batch file that I decided to make in school, then just decided to work on it more
 
 # How to Use:
