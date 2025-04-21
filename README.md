@@ -10,4 +10,10 @@ Run the .exe lmao
 In the discord (Not released yet, not my fault if you think this is a RAT lmao)
 
 # Why does VirusTotal mark this as Trojan?
-To be completely honest, I am unsure. If you would like, view the Source Code in the Discord. If you really want to go deep into it, uncompile it. It's only a batch file, so it shouldn't be difficult. It may be because of the Compiler, etc. If you find any potential reason as to why, please make a ticket in the Discord.
+I am not fully sure, but here are some reasons:
+- IP Lookup utilizes PowerShell to look up external IP Addresses.
+- When a paste is created, it opens a text file, which is often used in ransomware.
+- Writes process memory, since it's a batch script, but it isn't recognized as one since it's an executable file.
+- Edits registry key, because it needs to set values for variables
+- Gathers IP Information to output information to the "About" module
+- Attempts to interact with storage devices so it can store the temporary files required (Example: paste.txt)
